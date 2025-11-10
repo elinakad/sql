@@ -205,5 +205,5 @@ Consider, for example, concepts of fariness, inequality, social structures, marg
 
 
 ```
-Your thoughts...
+Databases and data systems, like Pakistan’s NADRA digital ID platform, are built on value systems that reflect societal norms and marginalize those who are outside of them. NADRA assumes a patriarchial, nuclear family structure and requires citizens to be linked to married parents with a male led household. This excludes families run by single mothers, orphans, gender fluid individuals, and children born to parents outside of wedlock. This assumption reienforces inequality by excluding individuals to basic rights in their country. This could force individuals to fabricate documents in order to access these rights or they remain invisible to the state showing how these databases become tools of surveillence and control of people. Even within the government of Canada, the information regarding martial status, income, gender, and ethnicity are accessible to institutions and can contribute to inequality. 
 ```
