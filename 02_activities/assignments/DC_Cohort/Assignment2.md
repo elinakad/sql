@@ -242,13 +242,14 @@ Steps to complete this part of the assignment:
 SELECT 
     v.vendor_name,
     p.product_name,
-FROM ( vendor_inventory vi
+FROM ( 
+    vendor_inventory vi
 JOIN vendor v 
     ON vi.vendor_id = v.vendor_id
 JOIN product p 
     ON vi.product_id = p.product_id
 )
-CROSS JOIN  ( (SELECT COUNT(*) FROM customer) * 5 * vi.original_price ) AS total_revenue
+CROSS JOIN  ((SELECT COUNT(*) FROM customer) * 5 * vi.original_price) AS total_revenue
 ORDER BY v.vendor_name, p.product_name;
 
 
@@ -259,13 +260,10 @@ ORDER BY v.vendor_name, p.product_name;
 
 DROP TABLE IF EXISTS temp.product_units;
 CREATE TEMP TABLE product_units AS
-SELECT 
-			*,
+SELECT *,
     CURRENT_TIMESTAMP AS snapshot_timestamp
-FROM
-    product
-WHERE
-    product_qty_type = 'unit';
+FROM product
+WHERE product_qty_type = 'unit';
 
 
 2. Using `INSERT`, add a new row to the product_unit table (with an updated timestamp). This can be any product you desire (e.g. add another record for Apple Pie). 
